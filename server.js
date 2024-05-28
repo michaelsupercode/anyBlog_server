@@ -16,7 +16,7 @@ const upload = multer({ dest: './img' })
 app.use(cors({ origin: "*" }))
 app.use('/img', express.static('./img'))
 
-app.get("/", (_, res) => res.send("this server runs quick and fine :)"));
+app.get("/", (_, res) => res.send("server runs quick, stable and fine :)"));
 
 // nodemailer
 const  NODEMAILER_USER = process.env.NODEMAILER_USER
